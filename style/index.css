@@ -4,4 +4,59 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: tahoma, verdana, sans-serif;
 }
+.flexit{
+  display: flex;
+}
+#showcase{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 80px;
+  background-image: url(https://e0.pxfuel.com/wallpapers/637/906/desktop-wallpaper-%DD%A4-star-wars-for-ultra.jpg);
+  background-size: 100% 100vh ;
+  background-attachment: fixed;
+}
+#showcase > div{
+  margin: 10px 0;
+  border: 1px solid #000;
+  padding: 10px;
+  flex: 0 1 320px;
+  background-color: #321cac;
+  border-radius: 12px;
+  text-align: center;
+}
+#showcase > div button{
+  width: 100%;
+  border: none;
+  text-align: center;
+  background-color: #00ffff;
+  padding: 4px 0;
+  cursor: pointer;
+  border-radius: 6px;
+
+}
+h2{
+  text-align: center;
+  padding: 18px 0;
+  position: fixed;
+  background-color: #ccc;
+  width: 100%;
+  font-family: sans-serif;
+}
+#showcase > div button:hover{
+  background-color: #096464;
+  color: #fff;
+}
+#showcase > div img{
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  border-radius: 50%;
+}
+.hide{
+  display: none;
+}
+
