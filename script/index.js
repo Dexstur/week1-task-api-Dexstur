@@ -13,7 +13,6 @@ function main() {
         characterDetails.classList += 'cDetails'
         characterDetails.style.display = 'none'
         trigger.addEventListener('click', function(e){
-            console.log(e)
             showDetail(e.target)
         })
         var cImage = document.createElement('img')
@@ -53,7 +52,6 @@ function main() {
             createEntry(element)
             
         })
-        console.log(data.results)
         while (data.next) {
             getApi = new Request(data.next)
             response = await fetch(getApi)
@@ -62,7 +60,6 @@ function main() {
             characterObjects.forEach(element => {
                 createEntry(element)
             })
-            console.log(data.results)
         }
 
     }
